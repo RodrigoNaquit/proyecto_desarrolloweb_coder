@@ -1,12 +1,12 @@
 /*general*/
 
 body {
-    background-color: rgb(213, 213, 204);
+    background-color: rgba(100, 204, 220, 0.75);
 }
 
 .title-bar {
-    background-color: rgb(249, 217, 14);
-    color: rgb(0, 0, 0);  
+    background-color: rgb(150, 243, 159);
+    color: rgb(255, 255, 255);  
     font-style: normal;
     font-weight: normal;
 
@@ -25,8 +25,8 @@ body {
 }
 
 .title-bar:hover {
-    background-color: black;
-    color: rgb(197, 194, 194);
+    background-color: rgba(199, 71, 71, 0.767);
+    color: rgb(255, 255, 255);
 }
 
 .brand {
@@ -38,6 +38,10 @@ body {
 .logo {
     justify-content: flex-end;
     width: fit-content;
+}
+
+.logo:hover {
+    
 }
 
 
