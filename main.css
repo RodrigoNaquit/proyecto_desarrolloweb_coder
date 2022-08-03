@@ -195,7 +195,7 @@ footer {
 }
 
 .product:hover {
-    content: url(../imagenes/ramen\ tee\ 2.webp);
+    content: url(imagenes/ramen\ tee\ 2.webp);
     width: 500px;
     height: 700px;
     
@@ -216,7 +216,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
 
 }
 
@@ -225,7 +225,7 @@ footer {
     text-align: center;
     color: aliceblue;
 
-    background-image: url(../imagenes/pop\ up.jpg);
+    background-image: url(imagenes/pop\ up.jpg);
     background-position: center;
     height: 250px;
 }
@@ -235,7 +235,7 @@ footer {
     text-align: center;
     color: rgb(240, 136, 7);
 
-    background-image: url(../imagenes/catwalk.jfif);
+    background-image: url(imagenes/catwalk.jfif);
     background-position: center;
     height: 250px;
 }
@@ -245,7 +245,7 @@ footer {
     text-align: center;
     color: rgb(173, 20, 255);
 
-    background-image: url(../imagenes/Fondo\ de\ evento.webp);
+    background-image: url(imagenes/Fondo\ de\ evento.webp);
     background-position: center;
     height: 250px;
 }
@@ -294,38 +294,38 @@ footer {
 }
 
 .producto-1 :hover {
-    content: url(../imagenes/sweat\ 2.webp);
+    content: url(imagenes/sweat\ 2.webp);
     width: 400px;
     height: 500px;
 }
 
 .producto-2 :hover {
-    content: url(../imagenes/shirt\ 2.webp);
+    content: url(imagenes/shirt\ 2.webp);
     width: 400px;
     height: 500px;
 }
 
 .producto-3 :hover {
-    content: url(../imagenes/NASA\ 2.webp);
+    content: url(imagenes/NASA\ 2.webp);
     width: 400px;
     height: 500px;
 
 }
 
 .producto-4 :hover {
-    content: url(../imagenes/flores\ 2.webp);
+    content: url(imagenes/flores\ 2.webp);
     width: 400px;
     height: 500px;
 }
 
 .producto-5 :hover {
-    content: url(../imagenes/chino\ 3.jpg);
+    content: url(imagenes/chino\ 3.jpg);
     width: 400px;
     height: 500px;
 }
 
 .producto-6 :hover {
-    content: url(../imagenes/momcards\ tee\ 2.webp);width: 400px;
+    content: url(imagenes/momcards\ tee\ 2.webp);width: 400px;
     height: 500px;
 }
 
