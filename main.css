@@ -1,32 +1,66 @@
 /*general*/
 
+
 body {
-    background-color: rgb(213, 213, 204);
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+  }
+
+footer {
+    background-color:#242321;
+    
+}
+    
+.footer-1 {
+        
+        font-style: italic;
+        font-size: 50px;
+        margin-top: 15%;
+    }
+
+.footer-2 {
+       
+        font-style: italic;
+        font-size: 30px;
+    }
+  
+.disclaimer {
+    
+    bottom: 2px;
+    background-color: white;
+    color: black;
+    border: solid rgb(0, 0, 0) 3px;
+    text-align: center;
+    width: 100%;
+
+    
 }
 
 .title-bar {
-    background-color: rgb(249, 217, 14);
-    color: rgb(0, 0, 0);  
+    background-color: rgba(249, 218, 14, 0);
+    color: rgb(0, 0, 0); 
+    font-family: 'Oswald', sans-serif; 
     font-style: normal;
     font-weight: normal;
 
+    padding: 30px;
     display: flex;
-    flex-direction: row;
-    padding: 20px;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
 
     transition-delay: 0.2s;
     transition-duration: 1s;
 
-    position: sticky;
+    position: fixed
+    ;
     top: 0;
     width: 100%;    
    
 }
 
 .title-bar:hover {
-    background-color: black;
-    color: rgb(197, 194, 194);
+    background-color: rgb(166, 165, 165);
+    color: rgb(255, 255, 255);
 }
 
 .brand {
@@ -43,72 +77,101 @@ body {
 
 .list {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: start;
+
+    padding: 50px;
+
+    font-size: 25px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;    
 }
 
-.list a {
-    background-color: rgb(245, 149, 23);
-    overflow: hidden;
-}
+
 
 .list a:hover {
-    background-color: #ddd;
+    background-color: rgb(255, 155, 15);
     color: black;
 }
 
 /*index*/
 
+.titular {
+    margin-top: 7%;
+
+    padding: 10px;
+    
+
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+
+    text-align: center;
+    color: #f61313;
+    background-color: #3c3830aa;
+}
+
+.titular:hover {
+    background-color: #fac800a2;
+    color: rgb(119, 119, 119);
+}
+
 .showcase {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 100px;
+    
 }
 
 .showcase p {
+    font-style: normal;
+    font-weight: 600;
     text-align: center;
 }
 
 .item-1 {
     transition-delay: 0.2s;
     transition-duration: 0.35s;
+    padding: 50px;
+    background-color: #fa0000;
 }
 
 .item-2 {
     transition-delay: 0.2s;
     transition-duration: 0.35s;
+    padding: 50px;
+    background-color: #f5e100;
 }
 
 .item-3 {
     transition-delay: 0.2s;
     transition-duration: 0.35s;
+    padding: 50px;
+    background-color: #8400ff;
 }
 
 .item-1:hover {
-    transform: scale(1.175); 
- }
-
- .item-3:hover {
-    transform: scale(1.175); 
+    transform: scale(1.050);
+    size: 0ch;
  }
 
  .item-2:hover {
-    transform: scale(1.175); 
+    transform: scale(1.050); 
  }
 
+ .item-3:hover {
+    transform: scale(1.050); 
+ }
 
-footer {
-    background-color: white;
-    color: black;
-    border: solid rgb(0, 0, 0) 3px;
-    text-align: center;
-
-
-}
 
 /*click en producto*/
 
 .seleccion {
+    padding: 100px;
     display: grid;
     grid-template-areas:
     "head head head"
@@ -132,7 +195,9 @@ footer {
 }
 
 .product:hover {
-    content: url(https://dummyimage.com/400x600/ff2617/fff);
+    content: url(../imagenes/ramen\ tee\ 2.webp);
+    width: 500px;
+    height: 700px;
     
 }
 
@@ -143,16 +208,53 @@ footer {
 
 /*novedades*/
 
-.novedades {
-    padding: 7px;
+.conteiner {
+    margin-top: 5%;
+
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+
+}
+
+.novedad-1 {
+    font-size: 72px;
     text-align: center;
+    color: aliceblue;
 
+    background-image: url(../imagenes/pop\ up.jpg);
+    background-position: center;
+    height: 250px;
+}
 
+.novedad-2 {
+    font-size: 72px;
+    text-align: center;
+    color: rgb(240, 136, 7);
+
+    background-image: url(../imagenes/catwalk.jfif);
+    background-position: center;
+    height: 250px;
+}
+
+.novedad-3 {
+    font-size: 72px;
+    text-align: center;
+    color: rgb(173, 20, 255);
+
+    background-image: url(../imagenes/Fondo\ de\ evento.webp);
+    background-position: center;
+    height: 250px;
 }
 
 /*productos*/
 
 .todo {
+
+    margin-top: 6%;
    display: grid;
    grid-template-columns:repeat(3, 1fr) ;
    grid-template-rows:repeat(2, 1fr) ;
@@ -161,64 +263,104 @@ footer {
    text-align: center;
 }
 
-.categorias {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    justify-content: center;
-  }
-  
-  .dropdown-contenido {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-contenido a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-contenido a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-contenido {display: block;}
-  
-  .dropdown:hover .categorias {background-color: #3e8e41;}
+.producto-1 {
+    padding: 45px;
+    background-color: rgba(236, 236, 213, 0.443);
+}
+
+.producto-2 {
+    padding: 45px;
+    background-color: rgba(158, 121, 84, 0.762);
+}
+
+.producto-3 {
+    padding: 45px;
+    background-color: rgba(0, 0, 0, 0.585);
+}
+
+.producto-4 {
+    padding: 45px;
+    background-color: rgba(0, 0, 0, 0.768);
+}
+
+.producto-5 {
+    padding: 45px;
+    background-color: rgba(74, 199, 224, 0.751);
+}
+
+.producto-6 {
+    padding: 45px;
+    background-color: rgba(136, 136, 136, 0.585);
+}
+
+.producto-1 :hover {
+    content: url(../imagenes/sweat\ 2.webp);
+    width: 400px;
+    height: 500px;
+}
+
+.producto-2 :hover {
+    content: url(../imagenes/shirt\ 2.webp);
+    width: 400px;
+    height: 500px;
+}
+
+.producto-3 :hover {
+    content: url(../imagenes/NASA\ 2.webp);
+    width: 400px;
+    height: 500px;
+
+}
+
+.producto-4 :hover {
+    content: url(../imagenes/flores\ 2.webp);
+    width: 400px;
+    height: 500px;
+}
+
+.producto-5 :hover {
+    content: url(../imagenes/chino\ 3.jpg);
+    width: 400px;
+    height: 500px;
+}
+
+.producto-6 :hover {
+    content: url(../imagenes/momcards\ tee\ 2.webp);width: 400px;
+    height: 500px;
+}
+
+
+
+  /*Sobre nosotros*/
+
+.nosotros {
+
+    margin-top: 7%;
+    padding: 30px;
+
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: dotted rgb(255, 204, 0) 3px;
+}
+
+.nosotros :hover {
+    color: #04AA6D;
+}
+
+.objetivo {
+    font-size: 50px;
+}
+
+.form {
+    font-size: 20px;
+    border: solid rgb(39, 139, 169) 3px;
+}
+
+
 
 
 /*media queris*/
 
-@media screen and (min-width:700px) {
-
-    seleccion {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
-    }
-    
-    
-    showcase {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-content: space-evenly;
-
-        padding: 20px;
-    }
-
-
-
-}
+/* al modificar todo hace poco todavia me queda pendiente actualizar las queris*/ 
 

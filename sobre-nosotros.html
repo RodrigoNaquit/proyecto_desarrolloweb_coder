@@ -4,63 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- link de CSS-->
+    <!-- Link del CSS-->
     <link rel="stylesheet" href="main.css">
-    <title>Sobre nosotros</title>
+
+    <!-- Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Link de Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <title>Proyecto Final V1.0</title>
+
 </head>
 <body>
     <header>
+
         <div class="title-bar">
 
             <!--Nombre no definido todavia-->
 
-            <h1 class="brand">Nombre de la marca</h1>
+            <h1 class="brand">Naquit</h1>
 
-            <!--Insertar logo de la marca-->
-
-            <a href="index.html"><img class="logo" src="https://dummyimage.com/300x150/000/fff" alt="Logo de (nombre de la marca)"></a>
         </div>
 
         <div class="list">
-
             <nav>
                 <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+                          <li><a class="dropdown-item"href="productos.html">Todos los productos</a></li>
+                          <li><a class="dropdown-item" href="novedades.html">Novedades</a></li>
+                          <li><a class="dropdown-item" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="productos.html">Todos los productos</a>
-                    </li>
-                    <li>
-                        <a href="novedades.html">Novedades</a>
-                    </li>
-                    <li>
-                        <a href="sobre-nosotros.html">Sobre Nosotros</a>
-                    </li>
-                </ul>
             </nav>
         </div>
     </header>
 
     <main>
         <div>
-            <h3>
-                (lo que queremos lograr con la marca, objetivos, estilo, inspiracion,etcetcetc)
-            </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non neque possimus, placeat exercitationem aliquid vitae hic, debitis quisquam quas maxime provident voluptas illum, saepe velit odit tenetur cupiditate facere odio.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia dicta deserunt beatae mollitia vitae voluptate quibusdam aliquid natus veniam eveniet doloremque distinctio, ab rem architecto tempore quis labore inventore enim.</p>
-        </div>
+            <div class="nosotros">
 
-        <div>
-            <img src="https://dummyimage.com/400x500/000000/ffffff" alt="una imagen del diseñador">
+                <h3 class="objetivo">
+                    Finalidad de la marca
+                </h3>
+
+                <p>Cuando empezamos con la creacion de la marca de ropa, el incentivo economico no fue lo que nos movio, fue la idea de crear algo que sea original, comodo, divertido y sobre todo diferente a las otras marcas.</p>
+
+                <p> Tambien tenemos el objetivo de producir ropa de manera 100% honesta, sin explotacion infantil en fabricas en asia, con fabricas locales, telas eco-amigables y reciclables queremos llegar a ser una marca que impulse los ideales de la creacion de trabajos y cuidar a la naturaleza y aun asi producir ropa de calidad y ganancias para demostrar que es posible hacerlo sin tener que recurrir a las medidas tradicionales</p>
+            </div>
+
+        <div class="form">
+            <p>Al suscribirte a esta pagina te enviaremos noticias sobre los productos, eventos y desarrollos en la compania.</p>
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="submit" value="Registrarse">
         </div>
     </main>
 
 
     <footer>
-        <p>creacion,arte,produccion y derechos de rodrigo</p>
+        <p class="disclaimer">Todos los productos de esta pagina tienen la finalidad de ser utilizados como objetos de prueba, ningun producto o diseño me pertenece.</p>
+        <div class="container-fluid">
+        
+            <div class="row p-5">
+              
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h3 text-white mb-5 footer-1">Rodrigo Naquit</p>
+              </div>
+              
+              
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5 text-white footer-2">Redes Sociales</p>
+                <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="https://www.instagram.com/?hl=es-la" target="_blank"> Instagram</a>
+                </div>
+                <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="https://es-la.facebook.com/" target="_blank"> Facebook</a>
+                </div>
+                <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="https://twitter.com/?lang=es" target="_blank"> Twitter</a>
+                </div>
+            </div>
     </footer>
+
+     <!-- Bootstrap Script-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
     
 </body>
 </html>
